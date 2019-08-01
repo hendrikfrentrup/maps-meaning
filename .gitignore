@@ -1,0 +1,7 @@
+.vscode/
+.ipynb_checkpoints/
+data/author*/
+data/201508*
+output/
+graphframes-f9e13ab4ac1a7113f8439744a1ab45710eb50a72/
+.DS_Store

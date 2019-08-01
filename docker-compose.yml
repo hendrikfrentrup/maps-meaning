@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  spark:
+    image: jupyter/all-spark-notebook:latest
+    container_name: scala-spark
+    ports:
+      - "8888:8888" # -> jupyter
+      - "4040:4040" # |-> sparkUIs
+      - "4041:4041"
+      - "4042:4042"
+    volumes:
+      - .:/home/jovyan/work
+    environment:
