@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    branches:
+      ignore:
+          - /feature*/
+    docker:
+      - image: hendrikfrentrup/pyspark-graphframes:0.0.1
+    steps:
+      - checkout
+      
+      - run: pytest -v -s -W ignore::DeprecationWarning
