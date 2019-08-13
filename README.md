@@ -1,4 +1,9 @@
-Todo:
--Dockerfile to run graphframes in dockerized notebook
--build docker image and add to docker hub
--add docker hub badge (and maybe other badges as well?)
+# Meaning from Maps/Graphs - Entity Resolution in GraphFrames
+
+[![CircleCI](https://circleci.com/gh/hendrikfrentrup/maps-meaning.svg?style=svg)](https://circleci.com/gh/hendrikfrentrup/maps-meaning)
+
+Easy Ways to get started:
+
+* Get the pyspark Docker container (GraphFrames preinstalled)
+* Launch the notebook
+* Run the tests 
