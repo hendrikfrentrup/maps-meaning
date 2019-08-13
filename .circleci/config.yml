@@ -8,5 +8,7 @@ jobs:
       - image: hendrikfrentrup/pyspark-graphframes:0.0.1
     steps:
       - checkout
-      
+      - run:
+          name: install pytest
+          command: pip install pytest
       - run: pytest -v -s -W ignore::DeprecationWarning
