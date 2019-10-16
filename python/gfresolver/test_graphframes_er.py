@@ -59,7 +59,6 @@ def test_resolve(init_spark, test_df):
     nodes = generate_nodes(test_df)
     edges = generate_edges(nodes, ["ip", "mac", "hostname"])
     cc = resolve(sc, nodes, edges)
-    print(cc.collect())
     assert cc.groupBy("component").count()\
              .orderBy('count', ascending=False)\
              .first()["count"] == 3

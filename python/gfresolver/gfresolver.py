@@ -10,7 +10,7 @@ def create_mirror(df):
 def generate_edges(nodes, match_on):
     for c in match_on:
         if c not in nodes.columns:
-            raise ValueError('match_on colsumns not in DataFrame')
+            raise ValueError('match_on columns not in DataFrame')
     if "id" in nodes.columns:
         mirror = create_mirror(nodes)
         match_conditions = [F.col(c) == F.col(f'_{c}') for c in match_on]
